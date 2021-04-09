@@ -33,24 +33,32 @@
         </div>
 
         <div class="search">
-            <input type="text" value="Marseille, France">
-            <input type="button" value="Rechercher">
-        </div>
+            <form action="post">
+                <input type="text" value="Marseille, France">
+                <input type="submit" value="Rechercher">
 
-        <div class="filters">
-            <h1>Filtres :</h1>
-            <div class="checkboxes">
-                <form action="post">
-                    <input type="checkbox" name="economique" id="economique" class="checkbox"> <label for="economique">
-                        Economique</label>
-                    <input type="checkbox" name="familial" id="familial" class="checkbox"> <label
-                        for="familial">Familial</label>
-                    <input type="checkbox" name="romantique" id="romantique" class="checkbox"> <label
-                        for="romantique">Romantique</label>
-                    <input type="checkbox" name="animaux" id="animaux" class="checkbox"> <label for="animaux">Animaux
-                        autorisés</label>
-                </form>
-            </div>
+                <div class="filters">
+                    <h2>Filtres :</h2>
+                    <div class="checkboxes">
+                        <label for="economique">
+                             <input type="checkbox" name="economique" id="economique" class="checkbox">
+                            Economique
+                        </label>
+                        <label for="familial">
+                            <input type="checkbox" name="familial" id="familial" class="checkbox"> 
+                            Familial
+                        </label>
+                        <label for="romantique">
+                            <input type="checkbox" name="romantique" id="romantique" class="checkbox"> 
+                            Romantique
+                        </label>
+                        <label for="animaux">
+                            <input type="checkbox" name="animaux" id="animaux" class="checkbox"> 
+                            Animaux autorisés
+                        </label>
+                    </div>
+                </div>
+            </form>
         </div>
 
         <div class="comment">
@@ -62,24 +70,24 @@
 
         <section>
             <div class="hebergements">
-                <h1>Hébergements à Marseille</h1>
+                <h2>Hébergements à Marseille</h2>
                 <div class="chambres">
-                    <a href="">
-                        <div class="chambre-verticale">
+                    <div class="chambre-verticale">
+                        <a href="">
                             <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                                 alt="Photo hotel">
                             <div class="infos-chambre">
-                                <h1>Auberge de la Cannebière</h1>
+                                <h3>Auberge de la Cannebière</h3>
                                 <p>Nuit à partir de <strong>25€</strong></p>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                     <div class="chambre-verticale">
                         <a href="">
                             <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                                 alt="Photo hotel">
                             <div class="infos-chambre">
-                                <h1>Hôtel du port</h1>
+                                <h3>Hôtel du port</h3>
                                 <p>Nuit à partir de 52€</p>
                             </div>
                         </a>
@@ -89,7 +97,7 @@
                             <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                                 alt="Photo hotel">
                             <div class="infos-chambre">
-                                <h1>Hôtel Les mouettes</h1>
+                                <h3>Hôtel Les mouettes</h3>
                                 <p>Nuit à partir de 76€</p>
                             </div>
                         </a>
@@ -99,7 +107,7 @@
                             <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                                 alt="Photo hotel">
                             <div class="infos-chambre">
-                                <h1>Hôtel de la mer</h1>
+                                <h3>Hôtel de la mer</h3>
                                 <p>Nuit à partir de 46€</p>
                             </div>
                         </a>
@@ -109,7 +117,7 @@
                             <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                                 alt="Photo hotel">
                             <div class="infos-chambre">
-                                <h1>Auberge Le Panier</h1>
+                                <h3>Auberge Le Panier</h3>
                                 <p>Nuit à partir de <strong>23€</strong></p>
                             </div>
                         </a>
@@ -119,7 +127,7 @@
                             <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                                 alt="Photo hotel">
                             <div class="infos-chambre">
-                                <h1>Hotel Chez Amina</h1>
+                                <h3>Hotel Chez Amina</h3>
                                 <p>Nuit à partir de 96€</p>
                             </div>
                         </a>
@@ -128,60 +136,59 @@
                 <p><a href="#">Afficher plus...</a></p>
             </div>
             <div class="populaire">
-                <h1>Populaires</h1>
+                <h2>Populaires</h2>
                 <div class="chambres-pop">
                     <div class="chambre-horizontale">
                         <a href="">
                             <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                                 alt="Photo hotel">
                             <div class="infos-chambre-pop">
-                                <h1>Hotel Le Soleil du Matin</h1>
+                                <h3>Hotel Le Soleil du Matin</h3>
                                 <p>Nuit à partir de 128€</p>
                             </div>
                         </a>
                     </div>
-                    <a href="">
-                        <div class="chambre-horizontale">
+                    <div class="chambre-horizontale">
+                        <a href="">
                             <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                                 alt="Photo hotel">
                             <div class="infos-chambre-pop">
-                                <h1>Au Coeur de l'eau Chambre d'hôte</h1>
+                                <h3>Au Coeur de l'eau Chambre d'hôte</h3>
                                 <p>Nuit à partir de 71€</p>
                             </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="chambre-horizontale">
+                        </a>
+                    </div>
+                    <div class="chambre-horizontale">
+                        <a href="">
                             <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                                 alt="Photo hotel">
                             <div class="infos-chambre-pop">
-                                <h1>Hotel Tout Blanc et Bleu</h1>
+                                <h3>Hotel Tout Blanc et Bleu</h3>
                                 <p>Nuit à partir de 68€</p>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <div class="activites">
-
-            <h1>Activités à Marseille</h1>
+            <h2>Activités à Marseille</h2>
             <div class="liste-activites">
-                <a href="">
-                    <div class="activite">
+                <div class="activite">
+                    <a href="">
                         <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                             alt="photo activite">
                         <div class="info-activite">
-                            <h1>Vieux Port</h1>
+                            <h3>Vieux Port</h3>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
                 <div class="activite">
                     <a href="">
                         <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo activite">
                         <div class="info-activite">
-                            <h1>Fort de Pomègues</h1>
+                            <h3>Fort de Pomègues</h3>
                         </div>
                     </a>
                 </div>
@@ -189,7 +196,7 @@
                     <a href="">
                         <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo activite">
                         <div class="info-activite">
-                            <h1>Iles du Frioul</h1>
+                            <h3>Iles du Frioul</h3>
                         </div>
                     </a>
                 </div>
@@ -198,7 +205,7 @@
                         <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                             alt="photo activite">
                         <div class="info-activite">
-                            <h1>Parc national des Calanques</h1>
+                            <h3>Parc national des Calanques</h3>
                         </div>
                     </a>
                 </div>
@@ -206,7 +213,7 @@
                     <a href="">
                         <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo activite">
                         <div class="info-activite">
-                            <h1>Notre-Dame-de-la-Garde</h1>
+                            <h3>Notre-Dame-de-la-Garde</h3>
                         </div>
                     </a>
                 </div>
@@ -214,7 +221,7 @@
                     <a href="">
                         <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="photo activite">
                         <div class="info-activite">
-                            <h1>Parc Longchamps</h1>
+                            <h3>Parc Longchamps</h3>
                         </div>
                     </a>
                 </div>
@@ -224,19 +231,19 @@
         <div class="footer">
             <footer>
                 <div class="footer-element">
-                    <h1>A propos</h1>
+                    <h2>A propos</h2>
                     <a href="#">Fonctionnement du site</a><br>
                     <a href="#">Conditions générales de vente</a><br>
                     <a href="#">Données et confidentialité</a><br>
 
                 </div>
                 <div class="footer-element">
-                    <h1>Nos hébergements</h1>
+                    <h2>Nos hébergements</h2>
                     <a href="#">Charte qualité</a><br>
                     <a href="#">Soumettre votre hotel</a><br>
                 </div>
                 <div class="footer-element">
-                    <h1>Assistance</h1>
+                    <h2>Assistance</h2>
                     <a href="#">Centre d'aide</a><br>
                     <a href="#">Nous contacter</a>
                 </div>

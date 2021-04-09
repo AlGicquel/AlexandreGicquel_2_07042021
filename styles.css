@@ -45,7 +45,7 @@ nav ul
 
 nav li
 {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .selected a
@@ -162,32 +162,30 @@ section a:hover
     margin: auto;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
 
 }
 
 .chambre-verticale
 {
     display: flex;
-    height: 150px;
+    flex-direction: column;
+    height: 180px;
     width: 230px;
     font-size: small;
     background-color: white;
     border-radius: 20px;
     margin-bottom: 20px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+    box-shadow: 0px 0px 6px lightgray;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .chambre-verticale img
 {
     display: block;
-    height: 144px;
-    width: 230px;
+    height: 110px;
+    width: calc(100% - 8px);
     border: 4px solid white;
-    border-radius: 15px;
-    margin: auto;
+    border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     
 
@@ -195,15 +193,13 @@ section a:hover
 
 .infos-chambre
 {
-    position: absolute;
     bottom: 0;
     left:0;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 20px 20px;
     background-color: rgba(255, 255, 255, 0.8);
-    width: 100%;
+    width: calc(100% - 20px)    ;
     height: 50px;
     max-width: 100%;
-    font-size: x-small;
     margin-right: 20px;
     padding-left: 20px;
 }
@@ -222,7 +218,6 @@ section a:hover
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
 
 }
 
@@ -230,41 +225,42 @@ section a:hover
 .chambre-horizontale
 {
     display: flex;
+    flex-direction: row;
     height: 120px;
     width: 100%;
     min-width: 178px;
     font-size: small;
     background-color: white;
     border-radius: 20px;
-    margin-bottom: 20px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 20px;    
     border: 4px solid white;
+    box-shadow: 0px 0px 6px lightgray;
+    transition: box-shadow 0.3s ease-in-out;
 
+}
+.chambre-horizontale a
+{
+    display: flex;
 }
 
 .chambre-horizontale img
 {
-    /* display: block; */
+    display: block;
     height: 100%;
     width: 35%;
     min-width: 35%;
     border-radius: 15px 0px 0px 15px;
     object-fit: cover;
-    /* position: absolute;
-    left:0; */
     
 
 }
 
 .infos-chambre-pop
 {
-    font-size: x-small;
+    display: block;
     padding-left: 20px;
     background-color: white;
-    /* position: absolute; 
-    right:0; */
+    border-radius: 0px 10px 10px 0px;
 }
 
 
@@ -285,19 +281,20 @@ section a:hover
 .activite
 {
     height: 100%;
-    min-width: 250px;
+    width: 250px;
     font-size: small;
     background-color: white;
     border-radius: 20px;
     margin-bottom: 20px;
-    position: relative;
+    box-shadow: 0px 0px 10px lightgray;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .activite img
 {
     display: block;
-    width: 250px;
-    border-radius: 15px;
+    width: auto;
+    border-radius: 20px 20px 0 0;
     max-width: 100%;
     max-height: 100%;
     margin: auto;
@@ -306,15 +303,13 @@ section a:hover
 
 .info-activite
 {
-    position: absolute;
     bottom: 0;
     left:0;
-    border-radius: 0px 0px 20px 15px;
+    border-radius: 0px 0px 19px 19px;
     background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
-    height: 50px;
-    max-width: 250px;
-    font-size: x-small;
+    height: 35px;
+    max-width: calc(100% - 20px);
     margin-right: 20px;
     padding-left: 20px;
 }
@@ -325,7 +320,7 @@ section a:hover
 
 }
 
-.activite a:hover
+.activites a:hover
 {
     text-decoration: underline;
 
