@@ -75,11 +75,11 @@ nav li
 .intro h1
 {
     font-size: large;
-    margin-bottom: none;
+    /* margin-bottom: none; */
 }
 .intro p
 {
-    margin-top: none;
+    /* margin-top: none; */
 }
 
 /* Filtres */
@@ -138,26 +138,29 @@ section
     padding-right: 30px;
 }
 
+.chambre-verticale:hover, .chambre-horizontale:hover
+{
+    box-shadow: 5px 5px 15px lightgray;
+
+}
+
+section a:hover
+{
+    text-decoration: underline;
+
+}
+
+
+
+/* Hebergement */
+
 .chambres
 {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     margin: auto;
-    justify-content: space-between;
-    align-items: center;
-
-
-}
-
-.chambres-pop
-{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 80%;
-    margin: auto;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border: 1px solid black;
 
@@ -182,12 +185,44 @@ section
     display: block;
     height: 144px;
     width: 230px;
+    border: 4px solid white;
     border-radius: 15px;
-    max-width: 95%;
-    max-height: 95%;
     margin: auto;
     object-fit: cover;
     
+
+}
+
+.infos-chambre
+{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 50px;
+    max-width: 100%;
+    font-size: x-small;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+
+
+
+/* Populaire */
+
+.chambres-pop
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
 
 }
 
@@ -205,51 +240,34 @@ section
     position: relative;
     justify-content: center;
     align-items: center;
+    border: 4px solid white;
+
 }
 
 .chambre-horizontale img
 {
-    display: block;
-    height: 95%;
+    /* display: block; */
+    height: 100%;
     width: 35%;
     min-width: 35%;
     border-radius: 15px 0px 0px 15px;
     object-fit: cover;
+    /* position: absolute;
+    left:0; */
     
 
-}
-
-.chambre-verticale:hover, .chambre-horizontale:hover
-{
-    box-shadow: 6px 6px 6px lightgray;
-
-}
-
-.infos-chambre
-{
-    position: absolute;
-    bottom: 0;
-    left:0;
-    border-radius: 0px 0px 20px 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 100%;
-    height: 50px;
-    max-width: 100%;
-    font-size: x-small;
-    margin-right: 20px;
-    padding-left: 20px;
 }
 
 .infos-chambre-pop
 {
     font-size: x-small;
     padding-left: 20px;
+    background-color: white;
+    /* position: absolute; 
+    right:0; */
 }
-section a:hover
-{
-    text-decoration: underline;
 
-}
+
 
 
 
@@ -260,7 +278,7 @@ section a:hover
 .liste-activites
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
