@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+  
+
+
 *
 {
+}
+
+body
+{
     font-family: raleway, sans-serif;
-    
+
 }
 
 .container
@@ -106,6 +113,7 @@ nav li
 {
     background-color: #0065FC;
     color: white;
+    cursor: pointer;
 }
 
 .input-text input[type=text]
@@ -142,7 +150,7 @@ nav li
 .input-text input[type=submit]:hover
 {
     /* box-shadow: 0 0 5px #0065FC; */
-    background-color: white;
+    background-color: #F2F2F2;
     color: #0065FC;
     cursor: pointer;
 }
@@ -154,6 +162,11 @@ nav li
 }
 
 
+
+
+
+
+
 /* Filtres */
 
 .filters
@@ -162,24 +175,33 @@ nav li
     margin: auto;
 }
 
-.filters h1
+.filters h2
 {
     font-size: medium;
 }
 
-.checkbox
+.checkboxes
 {
     margin-top: 13px;
     margin-left: 15px;
 }
 
-.checkboxes
+.checkboxes input[type="checkbox"]
 {
-    
+    /* display: none; */
 }
 
+input[type="checkbox"] + .label-text::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f129';
+    font-size: 1.2em;
+    margin-right: 0.3rem;
+    display: inline-block;
+  }
 
-
+input[type="checkbox"]:checked + .label-text::before {
+    content:'\f53a';
+}
 
 
 
