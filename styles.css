@@ -82,6 +82,78 @@ nav li
     /* margin-top: none; */
 }
 
+
+/* Search */
+
+.input-text
+{
+    position: relative;
+}
+
+.input-text i
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 8px;
+    border: 2px solid #F2F2F2;
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    transition: 0.3s;
+}
+
+.input-text i:hover
+{
+    background-color: #0065FC;
+    color: white;
+}
+
+.input-text input[type=text]
+{
+    border: 2px solid #f2f2f2;
+    border-left: none;
+    border-right: none;
+    padding: 8px;
+    transition: 0.3s;
+    padding-left: 10px;
+    margin-left: 40px;
+    outline-width: 0;
+}
+
+.input-text input[type=text]:focus
+{
+    border: 2px solid #F2F2F2;
+    /* box-shadow: 0 0 5px #0065FC; */
+    border-left: none;
+    border-right: none;
+}
+
+.input-text input[type=submit]
+{
+    position: absolute;
+    padding: 8px;
+    border: 2px solid #0065FC;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    transition: 0.3s;
+}
+
+.input-text input[type=submit]:hover
+{
+    /* box-shadow: 0 0 5px #0065FC; */
+    background-color: white;
+    color: #0065FC;
+    cursor: pointer;
+}
+
+.input-text input[type=text]:focus + i
+{
+    color:white;
+    background-color: #0065FC;
+}
+
+
 /* Filtres */
 
 .filters
@@ -99,6 +171,11 @@ nav li
 {
     margin-top: 13px;
     margin-left: 15px;
+}
+
+.checkboxes
+{
+    
 }
 
 
@@ -176,7 +253,7 @@ section a:hover
     border-radius: 20px;
     margin-bottom: 20px;
     box-shadow: 0px 0px 6px lightgray;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: 0.3s;
 }
 
 .chambre-verticale img

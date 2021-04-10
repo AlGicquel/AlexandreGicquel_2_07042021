@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="icons/fontawesome-free-5.15.3-web/css/all.css">
     <title>Réservia</title>
 </head>
 
@@ -34,25 +35,31 @@
 
         <div class="search">
             <form action="post">
-                <input type="text" value="Marseille, France">
-                <input type="submit" value="Rechercher">
-
+                <div class="input-text">
+                    <i class="fas fa-map-marker-alt fa-fw" aria-hidden="true"></i>
+                    <input type="text" value="Marseille, France" placeholder="Selectionnez une ville">
+                    <input type="submit" value="Rechercher">
+                </div>
                 <div class="filters">
                     <h2>Filtres :</h2>
                     <div class="checkboxes">
                         <label for="economique">
+                            <i class="fas fa-money-bill-wave "></i>
                             <input type="checkbox" name="economique" id="economique" class="checkbox">
                             Economique
                         </label>
                         <label for="familial">
+                            <i class="fas fa-child"></i>
                             <input type="checkbox" name="familial" id="familial" class="checkbox">
                             Familial
                         </label>
                         <label for="romantique">
+                            <i class="fas fa-heart"></i>
                             <input type="checkbox" name="romantique" id="romantique" class="checkbox">
                             Romantique
                         </label>
                         <label for="animaux">
+                            <i class="fas fa-dog"></i>
                             <input type="checkbox" name="animaux" id="animaux" class="checkbox">
                             Animaux autorisés
                         </label>
@@ -63,7 +70,7 @@
 
         <div class="comment">
             <p>
-
+                <i class="fas fa-info"></i>
                 Plus de 500 logements sont disponnibles dans cette ville
             </p>
         </div>
@@ -137,6 +144,7 @@
             </div>
             <div class="populaire">
                 <h2>Populaires</h2>
+                <i class="fas fa-chart-line"></i>
                 <div class="chambres">
                     <div class="chambre-horizontale">
                         <a href="">
