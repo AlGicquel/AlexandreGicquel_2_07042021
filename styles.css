@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-  
+@import url("//use.fontawesome.com/releases/v5.15.3/css/all.css'");
 
 
-*
-{
-}
 
 body
 {
@@ -82,12 +79,8 @@ nav li
 .intro h1
 {
     font-size: large;
-    /* margin-bottom: none; */
 }
-.intro p
-{
-    /* margin-top: none; */
-}
+
 
 
 /* Search */
@@ -114,6 +107,7 @@ nav li
     background-color: #0065FC;
     color: white;
     cursor: pointer;
+    border: 2px solid #0065FC;
 }
 
 .input-text input[type=text]
@@ -159,6 +153,7 @@ nav li
 {
     color:white;
     background-color: #0065FC;
+    padding: 8px;
 }
 
 
@@ -177,32 +172,104 @@ nav li
 
 .filters h2
 {
+    margin-top: 20px;
     font-size: medium;
 }
 
 .checkboxes
 {
+    display: flex;
+    align-items: center;
     margin-top: 13px;
     margin-left: 15px;
 }
 
+.checkboxes label
+{
+    /* display: flex;
+    align-items: center; */
+    margin-right: 20px;
+    padding: 3px 0 3px 0;
+    border: 2px solid #F2F2F2;
+    border-radius: 15px;
+    font-weight: 1000;
+    border-left: 0;
+    transition: 0.3s;
+}
+
+.checkboxes label:hover
+{
+    background-color: #F2F2F2;
+}
+
+
+/* 
+.checkboxes label + input[type="checkbox"]:checked
+{
+    background-color: #F2F2F2;
+} 
+*/
+
 .checkboxes input[type="checkbox"]
 {
-    /* display: none; */
+    display: none;
 }
 
-input[type="checkbox"] + .label-text::before {
+.checkboxes .label-text
+{
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+input[type="checkbox"] + .label-text::before 
+{
     font-family: "Font Awesome 5 Free";
-    content: '\f129';
-    font-size: 1.2em;
-    margin-right: 0.3rem;
-    display: inline-block;
-  }
-
-input[type="checkbox"]:checked + .label-text::before {
-    content:'\f53a';
+    font-size: 0.7em;
+    font-weight: 900;
+    /* display: inline-block; */
+    /* max-width: 27.2px; */
+    align-items: center;
+    color: #0065FC;
+    background-color: #d5e5ff;
+    border-radius: 15px;
+    padding: 8px;
+    margin-right: 10px;
+    /* margin-bottom: 10px; */
+    transition: 0.3s;
+    
+    
 }
 
+
+
+input[type="checkbox"]:checked + .label-text::before 
+{
+    color: white;
+    background-color: #0065FC;
+
+}
+
+
+
+input[type="checkbox"]#economique + .label-text::before 
+{
+    content: '\f53a';
+}
+
+input[type="checkbox"]#familial + .label-text::before 
+{
+    content: '\f1ae';
+}
+
+input[type="checkbox"]#romantique + .label-text::before 
+{
+    content: '\f004';
+}
+
+input[type="checkbox"]#animaux + .label-text::before 
+{
+    content: '\f6d3';
+}
 
 
 
