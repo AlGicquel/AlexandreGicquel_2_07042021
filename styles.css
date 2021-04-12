@@ -1,5 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
+@media all and (max-width: 1150px){
+
+    body .container
+    {
+        width: 100%;
+    }
+
+    .input-text input[type=text]
+    {
+        width:65%;
+    }
+
+    form .filters
+    {
+        flex-direction: column;
+    }
+
+    section
+    {
+        flex-direction: column-reverse;
+        
+    }
+
+    section .populaire
+    {
+        width: calc(100% - 50px);
+        border-radius: 0px;
+        /* padding-left: 0;
+        padding-right: 0; */
+    }
+
+    section .populaire .chambres .chambre-horizontale a .infos-chambre-pop .pop-desc  h3, section .populaire .chambres .chambre-horizontale a .infos-chambre-pop .pop-desc  p
+    {
+        font-size: large;
+    }
+
+    section .populaire img
+    {
+        width: 230px;
+        min-width: 230px;
+    }
+
+    section .hebergements
+    {
+        background-color: white;
+        width: calc(100% - 50px);
+    }
+
+    body .container .activites .liste-activites{
+        flex-direction: column;
+    }
+
+    body .container .activites .liste-activites .activites-verticales
+    {
+        width: 100%;
+    }
+
+    body .container .activites .liste-activites .activites-verticales .activite
+    {
+        width: 100%;
+    }
+
+    body .container .activites .liste-activites .activites-verticales .activite a img
+    {
+        height: 180px;
+        width: 100%;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+
+    }
+        
+}
+
+@media all and (max-width: 650px){
+
+    section .hebergements
+    {
+        width: calc(100% - 50px);
+    }
+
+    section .hebergements .chambres .chambre-verticale
+    {
+        width: 100%;
+    }
+
+    section .populaire img
+    {
+        width: 150px;
+        min-width: 150px;
+    }
+
+}
 
 
 *
@@ -35,6 +130,7 @@ a
 header
 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
 }
@@ -213,6 +309,7 @@ nav li
 {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 13px;
     margin-left: 15px;
 }
@@ -221,7 +318,7 @@ nav li
 {
     /* display: flex;
     align-items: center; */
-    margin-right: 20px;
+    margin: 0 20px 10px 0;
     padding: 3px 0 3px 0;
     border: 2px solid #F2F2F2;
     border-radius: 15px;
@@ -343,8 +440,7 @@ section span
     width: 25%;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px 0 30px;
 }
 
 .chambre-verticale:hover, .chambre-horizontale:hover
@@ -532,6 +628,7 @@ a:hover + .stars
 .activites
 {
     margin: 20px 0 20px 0;
+    padding: 0 30px 0 30px;
 }
 
 .activites h2
