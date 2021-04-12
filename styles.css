@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
-@import url("//use.fontawesome.com/releases/v5.15.3/css/all.css'");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 
 
-body
+*
 {
-    font-family: raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
 
 }
 
@@ -83,7 +81,42 @@ nav li
 
 
 
+/* Comment */
+.comment{
+    display: flex;
+    margin: 10px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.comment i
+{
+    border-radius: 15px;
+    border: 2px solid #F2F2F2;
+    color: #0065FC;
+    margin:auto;
+    margin-left: 0;
+    margin-right: 5px;
+    padding: 3px 1.5px 3px 1.5px;
+}
+
+.comment p
+{
+    /* margin-top: 10px; */
+    /* border: 1px solid black; */
+}
+
+
+
+
+
+
 /* Search */
+
+.search
+{
+    margin-top: 20px;
+}
+
 
 .input-text
 {
@@ -221,20 +254,18 @@ nav li
     margin-right: 10px;
 }
 
-input[type="checkbox"] + .label-text::before 
+.checkboxes input[type="checkbox"] + .label-text::before 
 {
     font-family: "Font Awesome 5 Free";
     font-size: 0.7em;
     font-weight: 900;
-    /* display: inline-block; */
-    /* max-width: 27.2px; */
     align-items: center;
     color: #0065FC;
     background-color: #d5e5ff;
     border-radius: 15px;
     padding: 8px;
+    margin: auto;
     margin-right: 10px;
-    /* margin-bottom: 10px; */
     transition: 0.3s;
     
     
@@ -242,7 +273,7 @@ input[type="checkbox"] + .label-text::before
 
 
 
-input[type="checkbox"]:checked + .label-text::before 
+.checkboxes input[type="checkbox"]:checked + .label-text::before 
 {
     color: white;
     background-color: #0065FC;
@@ -251,22 +282,22 @@ input[type="checkbox"]:checked + .label-text::before
 
 
 
-input[type="checkbox"]#economique + .label-text::before 
+.checkboxes input[type="checkbox"]#economique + .label-text::before 
 {
     content: '\f53a';
 }
 
-input[type="checkbox"]#familial + .label-text::before 
+.checkboxes input[type="checkbox"]#familial + .label-text::before 
 {
     content: '\f1ae';
 }
 
-input[type="checkbox"]#romantique + .label-text::before 
+.checkboxes input[type="checkbox"]#romantique + .label-text::before 
 {
     content: '\f004';
 }
 
-input[type="checkbox"]#animaux + .label-text::before 
+.checkboxes input[type="checkbox"]#animaux + .label-text::before 
 {
     content: '\f6d3';
 }
@@ -283,6 +314,18 @@ section
 {
     display: flex;
     justify-content: space-between;
+}
+
+section h2
+{
+    font-size: large;
+    font-weight: 900;
+}
+
+section span
+{
+    font-size: small;
+    font-weight: 900;
 }
 
 .hebergements
@@ -310,9 +353,14 @@ section
 
 }
 
+section a
+{
+    transition: 0.3s;
+}
+
 section a:hover
 {
-    text-decoration: underline;
+    color: #0065FC;
 
 }
 
@@ -369,6 +417,12 @@ section a:hover
     padding-left: 20px;
 }
 
+.infos-chambre h3, .infos-chambre p
+{
+    margin:3px 0 3px 0;
+    font-size: small;
+}
+
 
 
 
@@ -386,6 +440,14 @@ section a:hover
 
 } */
 
+.pop-icon
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
 
 .chambre-horizontale
 {
@@ -400,7 +462,7 @@ section a:hover
     margin-bottom: 20px;    
     border: 4px solid white;
     box-shadow: 0px 0px 6px lightgray;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: 0.3s;
 
 }
 .chambre-horizontale a
@@ -422,10 +484,41 @@ section a:hover
 
 .infos-chambre-pop
 {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch ;
     padding-left: 20px;
-    background-color: white;
-    border-radius: 0px 10px 10px 0px;
+    
+}
+
+.pop-desc  h3, .pop-desc  p
+{
+    margin: 5px 0 5px 0;
+    font-size: small;
+}
+
+
+
+.stars
+{
+    /* retirer le soulignement */
+    /* position: absolute; */
+    /* bottom: 0; */
+}
+
+.stars .fas 
+{
+    color:#0065FC;
+}
+
+.stars .fas + .grey
+{
+    color:#F2F2F2;
+}
+
+a:hover + .stars
+{
+    text-decoration: none;
 }
 
 
@@ -435,6 +528,17 @@ section a:hover
 
 
 /* Activités */
+
+.activites
+{
+    margin: 20px 0 20px 0;
+}
+
+.activites h2
+{
+    font-size: large;
+    margin: 20px 0 20px 0;
+}
 
 .liste-activites
 {
@@ -451,7 +555,7 @@ section a:hover
     border-radius: 20px;
     margin-bottom: 20px;
     box-shadow: 0px 0px 10px lightgray;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: 0.3s;
 }
 
 .activite img
@@ -479,9 +583,14 @@ section a:hover
 
 }
 
+.activites a 
+{
+    transition: 0.3s;
+}
+
 .activites a:hover
 {
-    text-decoration: underline;
+    color: #0065FC;
 
 }
 
