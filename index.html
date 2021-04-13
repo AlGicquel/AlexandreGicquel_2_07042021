@@ -19,19 +19,29 @@
                 <div class="navigation">
                     <nav class="nav-desktop">
                         <ul>
-                            <a href=""> <li class="selected">Hébergements</li></a>
-                            <a href=""> <li class="unselected">Activités </li></a>
-                            <a href=""> <li class="login">S'inscrire</li></a> 
+                            <a href="">
+                                <li class="selected">Hébergements</li>
+                            </a>
+                            <a href="">
+                                <li class="unselected">Activités </li>
+                            </a>
+                            <a href="">
+                                <li class="login">S'inscrire</li>
+                            </a>
                         </ul>
                     </nav>
-                    
+
                 </div>
 
             </header>
             <nav class="nav-mobile">
                 <ul>
-                    <a href=""><li class="selected"> Hébergements</li></a>
-                    <a href=""><li class="unselected">Activités</li></a>
+                    <a href="">
+                        <li class="selected"> Hébergements</li>
+                    </a>
+                    <a href="">
+                        <li class="unselected">Activités</li>
+                    </a>
                 </ul>
             </nav>
         </div>
@@ -45,8 +55,15 @@
             <form action="post">
                 <div class="input-text">
                     <i class="fas fa-map-marker-alt fa-fw" aria-hidden="true"></i>
-                    <input type="text" value="Marseille, France" placeholder="Selectionnez une ville">
-                    <input type="submit" value="Rechercher">
+                    <label for="location">
+                        <input type="text" name="location" id="location" value="Marseille, France"
+                            placeholder="Selectionnez une ville">
+                    </label>
+                    <!-- <input type="submit" value="Rechercher"> -->
+                    <button type="submit">
+                        <i class="fas fa-search fa-fw"></i>
+                        <span>Rechercher</span>
+                    </button>
                 </div>
                 <div class="filters">
                     <h2>Filtres :</h2>
@@ -327,20 +344,20 @@
             <footer>
                 <div class="footer-element">
                     <h2>A propos</h2>
-                    <a href="#">Fonctionnement du site</a><br>
-                    <a href="#">Conditions générales de vente</a><br>
-                    <a href="#">Données et confidentialité</a><br>
+                    <p><a href="#">Fonctionnement du site</a></p>
+                    <p><a href="#">Conditions générales de vente</a></p>
+                    <p><a href="#">Données et confidentialité</a></p>
 
                 </div>
                 <div class="footer-element">
                     <h2>Nos hébergements</h2>
-                    <a href="#">Charte qualité</a><br>
-                    <a href="#">Soumettre votre hotel</a><br>
+                    <p><a href="#">Charte qualité</a></p>
+                    <p><a href="#">Soumettre votre hotel</a></p>
                 </div>
                 <div class="footer-element">
                     <h2>Assistance</h2>
-                    <a href="#">Centre d'aide</a><br>
-                    <a href="#">Nous contacter</a>
+                    <p><a href="#">Centre d'aide</a></p>
+                    <p><a href="#">Nous contacter</a></p>
                 </div>
             </footer>
         </div>

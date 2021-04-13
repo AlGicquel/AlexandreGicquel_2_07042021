@@ -12,10 +12,16 @@
         order:3;
     }
 
-    .input-text input[type=text]
+    /* form .input-text 
     {
-        width:65%;
+        width:100%;
+        flex-wrap: nowrap;
     }
+
+    form .input-text input[type=text]
+    {
+        width:70%;
+    } */
 
     form .filters
     {
@@ -93,6 +99,45 @@
     {
         display: block;
     }
+
+
+
+
+
+
+    form .input-text 
+    {
+        width:100%;
+        flex-wrap: nowrap;
+    }
+
+    form .input-text input[type=text]
+    {
+        width:calc(100% - 80px);
+    }
+
+    form .input-text button[type=submit]
+    {
+        border-radius: 10px;
+        right: 15px;
+        padding: 9px;
+        
+    }
+
+    form .input-text button[type=submit] i
+    {
+        display:flex;
+    }
+
+    form button span
+    {
+        display:none;
+    }
+
+
+
+
+
 
     section .hebergements
     {
@@ -192,16 +237,21 @@ header
 
 .nav-mobile li
 {
-    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
 }
 
 .nav-mobile .unselected
 {
-    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
 }
 
-.selected
+.nav-mobile .selected
+{
+    border-bottom: 2px solid #0065FC;
+}
+
+.nav-desktop .selected
 {
     color: #0065FC;
     border-top: 2px solid #0065FC;
@@ -274,7 +324,27 @@ header
     position: relative;
 }
 
-.input-text i
+.input-text .fa-search
+{
+    display: none;
+    /* position:absolute; */
+    /* padding: 8px; */
+    /* border: 2px solid #0065FC;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s; */
+}
+
+.input-text .fa-search:hover
+{
+    /* box-shadow: 0 0 5px #0065FC; */
+    background-color: #F2F2F2;
+    color: #0065FC;
+    cursor: pointer;
+}
+
+.input-text .fa-map-marker-alt
 {
     position: absolute;
     left: 0;
@@ -286,7 +356,7 @@ header
     transition: 0.3s;
 }
 
-.input-text i:hover
+.input-text .fa-map-marker-alt:hover
 {
     background-color: #0065FC;
     color: white;
@@ -314,7 +384,7 @@ header
     border-right: none;
 }
 
-.input-text input[type=submit]
+.input-text button[type=submit]
 {
     position: absolute;
     padding: 8px;
@@ -325,7 +395,7 @@ header
     transition: 0.3s;
 }
 
-.input-text input[type=submit]:hover
+.input-text button[type=submit]:hover
 {
     /* box-shadow: 0 0 5px #0065FC; */
     background-color: #F2F2F2;
@@ -791,13 +861,13 @@ footer
 
 .footer-element
 {
-    margin-left: 50px;
+    margin-left: 30px;
     margin-right: 50px;
 }
 
-footer ul
+footer p
 {
-    list-style-type: none;
+    margin: 7px;
 }
 
 footer a:hover
