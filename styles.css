@@ -50,7 +50,7 @@
 
     section .populaire img
     {
-        width: 230px;
+        width: 40%;
         min-width: 230px;
     }
 
@@ -161,6 +161,12 @@
         min-width: 150px;
     }
 
+    section .populaire .chambres .chambre-horizontale a .infos-chambre-pop .pop-desc  h3
+    , section .populaire .chambres .chambre-horizontale a .infos-chambre-pop .pop-desc  p
+    {
+        font-size: small;
+    }
+
 }
 
 
@@ -172,7 +178,7 @@
 
 .container
 {
-    max-width: 1200px;
+    width: 75em;
     margin: auto;
 }
 
@@ -256,7 +262,7 @@ header
 
 .nav-mobile .selected
 {
-    
+    color: #0065FC;
     border-bottom: 2px solid #0065FC;
 }
 
@@ -390,6 +396,7 @@ header
     padding-left: 10px;
     margin-left: 40px;
     outline-width: 0;
+    font-weight: bold;
 }
 
 .input-text input[type=text]:focus
@@ -470,6 +477,7 @@ header
 
 .checkboxes label:hover
 {
+    color: #0065FC;
     background-color: #F2F2F2;
 }
 
@@ -490,22 +498,25 @@ header
 {
     border-radius: 20px;
     margin-right: 10px;
+    /* position: absolute; */
 }
 
 .checkboxes input[type="checkbox"] + .label-text::before 
 {
+    /* position: relative;
+    top:0; */
     font-family: "Font Awesome 5 Free";
-    font-size: 0.7em;
+    font-size: 0.9em;
     font-weight: 900;
     align-items: center;
     color: #0065FC;
-    background-color: #d5e5ff;
+    background-color: #deebff;
     border-radius: 15px;
     padding: 8px;
     margin: auto;
     margin-right: 10px;
     transition: 0.3s;
-    
+    margin-bottom: 2px;
     
 }
 
@@ -523,21 +534,25 @@ header
 .checkboxes input[type="checkbox"]#economique + .label-text::before 
 {
     content: '\f53a';
+    padding: 8px 6px  7px 6px;
 }
 
 .checkboxes input[type="checkbox"]#familial + .label-text::before 
 {
     content: '\f1ae';
+    padding: 8px 9.5px 7px 9.5px;
 }
 
 .checkboxes input[type="checkbox"]#romantique + .label-text::before 
 {
     content: '\f004';
+    padding: 8px 8px 7px 8px;
 }
 
 .checkboxes input[type="checkbox"]#animaux + .label-text::before 
 {
     content: '\f6d3';
+    padding: 8px 7px 7px 7px;
 }
 
 
@@ -712,8 +727,11 @@ section a:hover
 {
     display: flex;
     flex-direction: column;
-    align-content: stretch ;
+    align-content: space-between ;
     padding-left: 20px;
+    height: 100%;
+    width: 100%;
+    /* border:   1px solid black; */
     
 }
 
@@ -721,6 +739,11 @@ section a:hover
 {
     margin: 5px 0 5px 0;
     font-size: small;
+}
+
+.pop-desc  p
+{
+    /* margin-bottom: 50px; */
 }
 
 
