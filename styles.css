@@ -1,27 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
-@media all and (max-width: 1150px){
+@media all and (max-width: 1200px){
 
     body .container
     {
         width: 100%;
     }
 
-    header div:nth-child(2)
-    {
-        order:3;
-    }
+    
 
-    /* form .input-text 
-    {
-        width:100%;
-        flex-wrap: nowrap;
-    }
-
-    form .input-text input[type=text]
-    {
-        width:70%;
-    } */
 
     form .filters
     {
@@ -31,33 +18,34 @@
     section
     {
         flex-direction: column-reverse;
-        
     }
 
     section .populaire
     {
-        width: calc(100% - 60px);
+        width: calc(100% - 30px);
         border-radius: 0px;
-        /* padding-left: 0;
-        padding-right: 0; */
     }
 
     section .populaire .chambres .chambre-horizontale a .infos-chambre-pop .pop-desc  h3
     , section .populaire .chambres .chambre-horizontale a .infos-chambre-pop .pop-desc  p
     {
-        font-size: large;
+        font-size: small;
+    }
+
+    section .populaire .chambres .chambre-horizontale
+    {
+        width: 30%;
     }
 
     section .populaire img
     {
-        width: 40%;
-        min-width: 230px;
+        width: 30%;
     }
 
     section .hebergements
     {
         background-color: white;
-        width: calc(100% - 60px);
+        width: calc(100% - 30px);
     }
 
     section .chambre-verticale
@@ -66,17 +54,21 @@
     }
 
     body .container .activites .liste-activites{
+        display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        height: 760px;
     }
 
     body .container .activites .liste-activites .activites-verticales
     {
-        width: 100%;
+        width: 48%;
     }
 
     body .container .activites .liste-activites .activites-verticales .activite
     {
         width: 100%;
+        margin-bottom: 22px;
     }
 
     body .container .activites .liste-activites .activites-verticales .activite a img
@@ -85,28 +77,71 @@
         width: 100%;
     }
 
-    footer {
+    body .container .activites .liste-activites .activites-verticales:nth-child(1)
+    {
+        height: 250px;
+    }
+
+
+
+
+
+
+    body .container .footer footer {
         flex-wrap: wrap;
-        /* flex-direction: column; */
+        margin-bottom: 0;
 
     }
         
 }
 
-@media all and (max-width: 650px){
+@media all and (max-width: 800px){
+
+    header div:nth-child(2)
+    {
+        order:3;
+    }
+    header .navigation
+    {
+        width: 100%;
+    }
+    header .navigation nav
+    {
+        width:100%
+    }
+
+    header .navigation nav ul
+    {
+        padding-left:0;
+    }
+
+    header .navigation nav ul li
+    {
+        width: 50%;
+    }
 
     header .navigation .nav-desktop ul a .selected 
     , header .navigation .nav-desktop  ul a .unselected
     {
-        display:none;
+        padding: 0 0 15px 0;
+        width: 100%;
     }
 
-    body .container .nav-mobile
+    header .navigation .nav-desktop ul a .selected 
     {
-        display: block;
+        border-top: 0;
+        border-bottom: 2px solid #0065FC;
     }
 
+    header .navigation .nav-desktop ul a .unselected 
+    {
+        border-top: 0;
+        border-bottom: 2px solid #F2F2F2;
+    }
 
+    header .login{
+        padding:0;
+    }
 
 
 
@@ -133,6 +168,7 @@
     form .input-text button[type=submit] i
     {
         display:flex;
+        padding: 2px 0 2px 2px;
     }
 
     form button span
@@ -143,11 +179,28 @@
 
 
 
+    section .hebergements .chambres .chambre-verticale
+    {
+        width: 48%;
+    }
 
+    section .populaire .chambres .chambre-horizontale
+    {
+        width: 100%;
+    }
+
+    section .populaire .chambres .chambre-horizontale a .infos-chambre-pop .pop-desc  h3
+    , section .populaire .chambres .chambre-horizontale a .infos-chambre-pop .pop-desc  p
+    {
+        font-size: large;
+    }
+}
+
+@media all and (max-width: 650px){
 
     section .hebergements
     {
-        width: calc(100% - 60px);
+        width: calc(100% - 30px);
     }
 
     section .hebergements .chambres .chambre-verticale
@@ -157,14 +210,36 @@
 
     section .populaire img
     {
-        width: 150px;
-        min-width: 150px;
+        width: 40%;
     }
 
     section .populaire .chambres .chambre-horizontale a .infos-chambre-pop .pop-desc  h3
     , section .populaire .chambres .chambre-horizontale a .infos-chambre-pop .pop-desc  p
     {
         font-size: small;
+    }
+
+
+
+    body .container .activites .liste-activites{
+        flex-direction: row;
+        height: auto;
+    }
+
+    body .container .activites .liste-activites .activites-verticales
+    {
+        width: 100%;
+    }
+
+    body .container .activites .liste-activites .activites-verticales .activite
+    {
+        width: 100%;
+    }
+
+    body .container .activites .liste-activites .activites-verticales .activite a img
+    {
+        height: 180px;
+        width: 100%;
     }
 
 }
@@ -178,7 +253,7 @@
 
 .container
 {
-    width: 75em;
+    width: 1200px;
     margin: auto;
 }
 
@@ -205,7 +280,7 @@ header
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     margin: 0;
 }
 
@@ -217,7 +292,9 @@ header
 
 .navigation
 {
-    margin:0;
+    display:flex;
+    text-align: center;
+    align-items: center;
 }
 
 .nav-desktop ul
@@ -309,7 +386,6 @@ header
     display: flex;
     margin: 10px;
     text-align: center;
-    /* border: 1px solid black; */
 }
 .comment i
 {
@@ -320,12 +396,6 @@ header
     margin-left: 0;
     margin-right: 5px;
     padding: 3px 1.5px 3px 1.5px;
-}
-
-.comment p
-{
-    /* margin-top: 10px; */
-    /* border: 1px solid black; */
 }
 
 
@@ -349,21 +419,12 @@ header
 .input-text .fa-search
 {
     display: none;
-    /* position:absolute; */
-    /* padding: 8px; */
-    /* border: 2px solid #0065FC;
-    background-color: #0065FC;
-    color: white;
-    border-radius: 10px;
-    transition: 0.3s; */
 }
 
 .input-text .fa-search:hover
 {
-    /* box-shadow: 0 0 5px #0065FC; */
     background-color: #F2F2F2;
     color: #0065FC;
-    cursor: pointer;
 }
 
 .input-text .fa-map-marker-alt
@@ -371,8 +432,7 @@ header
     position: absolute;
     left: 0;
     top: 0;
-    padding: 8px;
-    border: 2px solid #F2F2F2;
+    padding: 10px;
     background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
     transition: 0.3s;
@@ -383,7 +443,7 @@ header
     background-color: #0065FC;
     color: white;
     cursor: pointer;
-    border: 2px solid #0065FC;
+    padding: 10px;
 }
 
 .input-text input[type=text]
@@ -399,19 +459,13 @@ header
     font-weight: bold;
 }
 
-.input-text input[type=text]:focus
-{
-    border: 2px solid #F2F2F2;
-    /* box-shadow: 0 0 5px #0065FC; */
-    border-left: none;
-    border-right: none;
-}
+
 
 .input-text button[type=submit]
 {
     position: absolute;
-    padding: 8px;
-    border: 2px solid #0065FC;
+    padding: 10px;
+    border:0;
     background-color: #0065FC;
     color: white;
     border-radius: 0 10px 10px 0;
@@ -420,8 +474,8 @@ header
 
 .input-text button[type=submit]:hover
 {
-    /* box-shadow: 0 0 5px #0065FC; */
     background-color: #F2F2F2;
+    padding: 10px;
     color: #0065FC;
     cursor: pointer;
 }
@@ -464,8 +518,6 @@ header
 
 .checkboxes label
 {
-    /* display: flex;
-    align-items: center; */
     margin: 0 20px 10px 0;
     padding: 3px 0 3px 0;
     border: 2px solid #F2F2F2;
@@ -482,12 +534,6 @@ header
 }
 
 
-/* 
-.checkboxes label + input[type="checkbox"]:checked
-{
-    background-color: #F2F2F2;
-} 
-*/
 
 .checkboxes input[type="checkbox"]
 {
@@ -498,13 +544,10 @@ header
 {
     border-radius: 20px;
     margin-right: 10px;
-    /* position: absolute; */
 }
 
 .checkboxes input[type="checkbox"] + .label-text::before 
 {
-    /* position: relative;
-    top:0; */
     font-family: "Font Awesome 5 Free";
     font-size: 0.9em;
     font-weight: 900;
@@ -567,6 +610,7 @@ section
 {
     display: flex;
     justify-content: space-between;
+    width: calc(100% - 30px);
 }
 
 section h2
@@ -697,7 +741,7 @@ section a:hover
     width: 100%;
     min-width: 178px;
     font-size: small;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 20px;
     margin-bottom: 20px;    
     border: 4px solid white;
@@ -731,8 +775,8 @@ section a:hover
     padding-left: 20px;
     height: 100%;
     width: 100%;
-    /* border:   1px solid black; */
-    
+    background-color: white;
+    border-radius: 0 10px 10px 0;
 }
 
 .pop-desc  h3, .pop-desc  p
@@ -741,19 +785,8 @@ section a:hover
     font-size: small;
 }
 
-.pop-desc  p
-{
-    /* margin-bottom: 50px; */
-}
 
 
-
-.stars
-{
-    /* retirer le soulignement */
-    /* position: absolute; */
-    /* bottom: 0; */
-}
 
 .stars .fas 
 {
@@ -781,7 +814,7 @@ a:hover + .stars
 .activites
 {
     margin: 20px 0 20px 0;
-    padding: 0 30px 0 30px;
+    padding: 0 20px 0 20px;
 }
 
 .activites h2
@@ -906,7 +939,7 @@ footer
 
 footer p
 {
-    margin: 7px;
+    margin-top: 7px;
 }
 
 footer a:hover
