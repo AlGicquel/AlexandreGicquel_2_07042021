@@ -748,11 +748,18 @@ section a:hover
     
 }
 
+.pop-desc
+{
+    flex: 1 0 80%;
+    flex-basis: 80%;
+}
+
 
 .infos-chambre-pop .stars
 {
     height: 100%;
     /* align-self: flex-end; */
+    flex-basis: 20%;
 }
 
 .pop-desc  h3, .pop-desc  p
