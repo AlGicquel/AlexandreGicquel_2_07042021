@@ -129,14 +129,21 @@
 
     header .navigation .nav-desktop ul a .selected 
     {
+        border-bottom: 2px solid #F2F2F2;
         border-top: 0;
-        border-bottom: 2px solid #0065FC;
     }
 
     header .navigation .nav-desktop ul a .unselected 
     {
         border-top: 0;
         border-bottom: 2px solid #F2F2F2;
+    }
+
+    header .navigation .nav-desktop ul a .selected:hover
+    , header .navigation .nav-desktop  ul a .unselected:hover
+    {
+        border-bottom: 2px solid #0065FC;
+
     }
 
     header .login{
@@ -315,16 +322,22 @@ header
 
 .nav-desktop .selected 
 {
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
     padding: 20px 20px 0 20px;
+    /* transition: 0.3s; */
 }
 
 .nav-desktop .unselected 
 {
     padding: 20px 20px 0 20px;
+    /* transition: 0.3s; */
 }
 
+.nav-desktop .selected:hover
+,.nav-desktop .unselected:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
 .login 
 {
     padding: 20px 20px 0 20px;
